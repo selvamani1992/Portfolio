@@ -1,0 +1,62 @@
+{
+  "events": [
+    {
+      "start_date": {
+        "year": "2017",
+        "month": "9"
+      },
+       "end_date": {
+        "year": "2023",
+        "month": "3"
+      },
+      "media": {
+        "url": "",
+        "credit": ""
+      },
+      "text": {
+        "headline": "Customer Relationship | Operational Manager",
+        "text": "Established positive and effective communication among unit staff and organization leadership, reducing miscommunications, and missed deadlines.<br><br>Implemented process improvement to shape organizational culture, optimize procedures for higher efficiency and help company evolve and grow.<br><br>Developed systems and procedures to improve operational quality and team efficiency."
+      },
+      "background": {"color": "#17A589"}
+    },
+    {
+      "start_date": {
+        "year": "2016",
+        "month": "4"
+      },
+       "end_date": {
+        "year": "2017",
+        "month": "8"
+      },
+      "media": {
+        "url": "",
+        "credit": ""
+      },
+      "text": {
+        "headline": "Freelancing - Title Search",
+        "text": "<p>Conducted comprehensive title searches to maintain accuracy and compliance of real estate transactions.<br><br>Analyzed title documents to identify potential issues and resolve any discrepancies.<p>"
+      },
+      "background": {"color": "#17A589"}
+    },
+    {
+      "start_date": {
+        "year": "2012",
+        "month": "6"
+      },
+      "end_date": {
+        "year": "2016",
+        "month": "3"
+      },
+      "media": {
+        "url": "",
+        "credit": ""
+      },
+      "text": {
+        "headline": "Subject Matter Expert",
+        "text": "<p>Started off career track with FAI, Salem.<br><br> Researched ownership interests and liens on real estate properties.<br><br>Mentored new hires, resulting in stronger staff development and increased productivity.<br><br>Evaluated employee skills and knowledge regularly, training, and mentoring individuals with lagging skills.<p>"
+
+      },
+      "background": {"color": "#17A589"}
+    }
+  ]
+}
