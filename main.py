@@ -84,16 +84,41 @@ if page == "Home":
     st.markdown("<h3 style='color: white;'><b>EDUCATION:</b></h3>", unsafe_allow_html=True)
     st.markdown(
         "#### <font color='#6e6e6e'>"
-        "&nbsp;&nbsp;&nbsp;IITM Advance Professional Programing with Master Data Science,<br> "
+        "&nbsp;&nbsp;&nbsp;IIT-Madras Advance Professional Programing with Master Data Science,<br> "
         "**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Guvi - IIT Madras](https://www.guvi.in/)**<br> "
         "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Feb, 2023 - Jul, 2023)</font>",
         unsafe_allow_html=True)
     st.markdown(
         "#### <font color='#6e6e6e'>"
         "&nbsp;&nbsp;&nbsp;Bachelor of Computer Application,<br> "
-        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Jairam Arts & Science College](https://jairaminfo.in/)**<br> "
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Jairam Arts & Science College](https://jairaminfo.in/)**<br><br> "
         "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Jun, 2009 - Apr, 2012)</font>",
         unsafe_allow_html=True)
+
+    st.markdown("<h3 style='color: white;'><b>CERTIFICATIONS:</b></h3>", unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+        "&nbsp;&nbsp;&nbsp;- **[Python from IIT-Madras](https://digitalskills.pravartak.org.in/verify/cert/275552db0a2962c317ed0532f6366ac5)**<br>"
+                "</font>",
+        unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[Professional in Advanced Programming from IIT-Madras](https://digitalskills.pravartak.org.in/verify/cert/b3b1b5c4d9eaf0772914813eea65f66a)**<br></font>",
+                unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[Master Data Science from Guvi](www.guvi.in/verify-certificate?id=50116pLo53c82mJUT9)**<br></font>",
+                unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[Machine Learning from Guvi](https://www.guvi.in/verify-certificate?id=13Qax66108sVj29889)**<br></font>",
+                unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[MongoDB from Guvi](https://www.guvi.in/verify-certificate?id=131G3Vx9w14n68k4TK)**<br></font>",
+                unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[PowerBI from Guvi](https://www.guvi.in/verify-certificate?id=9Uo53d551J27Nsr608&course=powerbi_step_by_step_english)**<br></font>",
+                unsafe_allow_html=True)
+    st.markdown("#### <font color='#6e6e6e'>"
+                "&nbsp;&nbsp;&nbsp;- **[SQL(Intermediate) from HackerRank](https://www.hackerrank.com/certificates/c9b2216b3c09)**<br></font>",
+                unsafe_allow_html=True)
+
 
 elif page == "Projects":
     st.markdown("<h3 style='color: #0a1828;'><b>Docx Translator:</b></h3>", unsafe_allow_html=True)
@@ -139,13 +164,13 @@ elif page == "Projects":
     # mention(label="Streamlit App", icon="streamlit", url="", )
     mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DA_Analysis_on_charges")
 
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Youtube Data Harvesting and Warehousing:</b></h3>",
                 unsafe_allow_html=True)
     st.markdown("""<p style='color: #0a1828;'>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Performing ETL and EDA on Phonepe data can provide valuable insights into the recent trends of online transactions. By analyzing various scenarios and visualizing the data through different plotting techniques, we can gain a deeper understanding of the patterns and dynamics at play.
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The process involves scraping comprehensive channel information from YouTube using the Google API. This data is then stored in MongoDB and later migrated to SQL for further analysis and management. Finally, the data is projected for FAQ purposes, allowing for easy access and utilization.
                                 </P""", unsafe_allow_html=True)
     # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/PhonepePulse")
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/YoutubeDataHarvesting.py")
 
     st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
                 unsafe_allow_html=True)
