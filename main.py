@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pybase64
 from streamlit_timeline import timeline
+import streamlit.components.v1 as components
 from streamlit_extras.mention import mention
 from streamlit_extras.app_logo import add_logo
 
@@ -46,13 +47,13 @@ right: 2rem;
 </style>
 """
 
+
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.markdown("<h1 style='color: WHITE;'><b>SELVAMANI ANDIAPPAN</b></h1>", unsafe_allow_html=True)
 #st.title('SELVAMANI ANDIAPPAN')
 
 with st.sidebar:
-    #st.image('dp.png',width=150)
     page = option_menu("",
                 options=['Home','Projects','Contact'],
                 default_index=0,
@@ -103,10 +104,76 @@ elif page == "Projects":
             url="https://doctranslator-selvamaniind.streamlit.app/", )
     mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DocTranslator", )
 
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Broadband User Churn Prediction:</b></h3>", unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Churn prediction is a crucial task in customer relationship management as it helps businesses identify customers who are likely to leave or "churn" and take proactive measures to retain them.
+                    </P""", unsafe_allow_html=True)
+    mention(label="Streamlit App", icon="streamlit", url="https://churnprediction-broadband.streamlit.app/", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Churn_Prediction")
+
     st.markdown("<h3 style='color: #0a1828;'><b><br>Loan Approval Prediction:</b></h3>", unsafe_allow_html=True)
-    #st.markdown("<h4 style='color: #0a1828;'><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDUCATION:</b></h4>", unsafe_allow_html=True)
     st.markdown("""<p style='color: #0a1828;'>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- With the assistance of this machine learning model, we can assess an individual's eligibility for obtaining a loan. By analyzing multiple parameters, this model possesses the capability to deliver accurate predictions and promote fair lending practices.
                 </P""", unsafe_allow_html=True)
-    #mention(label="Streamlit App", icon="streamlit", url="https://doctranslator-selvamaniind.streamlit.app/", )
+    #mention(label="Streamlit App", icon="streamlit", url="", )
     mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Loan_Approval_Prediction" )
+
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Breast Cancer Prediction:</b></h3>", unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Developed a model that accurately predicts the likelihood of breast cancer in patients. Through analyzing the available data, performing data preprocessing, and utilizing advanced machine learning algorithms.
+                    </P""", unsafe_allow_html=True)
+    # mention(label="Streamlit App", icon="streamlit", url="", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Breast_Cancer_Prediction")
+
+    st.markdown("<h3 style='color: #0a1828;'><b><br>ISS Live Location Tracking:</b></h3>", unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Extract the live location information of the International Space Station and display it on a geoMap.
+                        </P""", unsafe_allow_html=True)
+    # mention(label="Streamlit App", icon="streamlit", url="", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Iss_Live_Location")
+
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Data Analysis on Delivery Charges:</b></h3>", unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Analysis of the charges levied by their Delivery partners to X company per Order are correct or not and action plans to fix the difference.
+                            </P""", unsafe_allow_html=True)
+    # mention(label="Streamlit App", icon="streamlit", url="", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DA_Analysis_on_charges")
+
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
+                unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Performing ETL and EDA on Phonepe data can provide valuable insights into the recent trends of online transactions. By analyzing various scenarios and visualizing the data through different plotting techniques, we can gain a deeper understanding of the patterns and dynamics at play.
+                                </P""", unsafe_allow_html=True)
+    # mention(label="Streamlit App", icon="streamlit", url="", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/PhonepePulse")
+
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
+                unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Performing ETL and EDA on Phonepe data can provide valuable insights into the recent trends of online transactions. By analyzing various scenarios and visualizing the data through different plotting techniques, we can gain a deeper understanding of the patterns and dynamics at play.
+                                    </P""", unsafe_allow_html=True)
+    # mention(label="Streamlit App", icon="streamlit", url="", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/PhonepePulse")
+
+elif page == 'Contact':
+    st.markdown(
+        "<p style='color: white;'><strong>Reach out to me via the form below or by emailing me at <a href='mailto:selvamani.ind@gmail.com' style='color: white;'>selvamani.ind@gmail.com</a>. You can also connect with me on <a href='https://www.linkedin.com/in/selvamani-a-795580266/' style='color: white;'>LinkedIn</a> or <a href='https://github.com/selvamani1992' style='color: white;'>GitHub</a>.</strong></p>",
+        unsafe_allow_html=True)
+    contact_form = """
+    <form action="https://formsubmit.co/selvamani.ind@gmail.com" method="POST">
+         <input type="hidden" name="_captcha" value="false">
+         <input type="text" name="name" placeholder="Your name" required>
+         <input type="email" name="email" placeholder="Your email" required>
+         <textarea name="message" placeholder="Your message here"></textarea>
+         <button type="submit">Send</button>
+    </form>
+    """
+    st.markdown(contact_form, unsafe_allow_html=True)
+
+    # Use Local CSS File
+    def local_css(file_name):
+        with open(file_name) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
+    local_css("style/style.css")
