@@ -190,6 +190,7 @@ elif page == 'Contact':
          <input type="text" name="name" placeholder="Your name" required>
          <input type="email" name="email" placeholder="Your email" required>
          <textarea name="message" placeholder="Your message here"></textarea>
+         <input type="hidden" name="_autoresponse" value="Auto-reply: Thank you for reaching out. We appreciate your message and it will be reviewed promptly. We will contact you back as soon as possible.">
          <button type="submit">Send</button>
     </form>
     """
