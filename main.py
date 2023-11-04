@@ -140,7 +140,7 @@ elif page == "Projects":
     st.markdown("""<p style='color: #0a1828;'>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- By utilizing this advanced machine learning model, we will be equipped with the capability to accurately forecast the probability of diabetes occurrence among expectant mothers.
                         </P""", unsafe_allow_html=True)
-    mention(label="Streamlit App", icon="streamlit", url="diabetesprediction-selvamaniind.streamlit.app", )
+    mention(label="Streamlit App", icon="streamlit", url="https://diabetesprediction-selvamaniind.streamlit.app", )
     mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DiabetesPrediction")
 
     st.markdown("<h3 style='color: #0a1828;'><b><br>Loan Approval Prediction:</b></h3>", unsafe_allow_html=True)
