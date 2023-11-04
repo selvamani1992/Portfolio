@@ -136,6 +136,13 @@ elif page == "Projects":
     mention(label="Streamlit App", icon="streamlit", url="https://churnprediction-broadband.streamlit.app/", )
     mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Churn_Prediction")
 
+    st.markdown("<h3 style='color: #0a1828;'><b><br>Diabetes Prediction:</b></h3>", unsafe_allow_html=True)
+    st.markdown("""<p style='color: #0a1828;'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- By utilizing this advanced machine learning model, we will be equipped with the capability to accurately forecast the probability of diabetes occurrence among expectant mothers.
+                        </P""", unsafe_allow_html=True)
+    mention(label="Streamlit App", icon="streamlit", url="diabetesprediction-selvamaniind.streamlit.app", )
+    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DiabetesPrediction")
+
     st.markdown("<h3 style='color: #0a1828;'><b><br>Loan Approval Prediction:</b></h3>", unsafe_allow_html=True)
     st.markdown("""<p style='color: #0a1828;'>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- With the assistance of this machine learning model, we can assess an individual's eligibility for obtaining a loan. By analyzing multiple parameters, this model possesses the capability to deliver accurate predictions and promote fair lending practices.
