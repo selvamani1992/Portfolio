@@ -121,71 +121,96 @@ if page == "Home":
 
 
 elif page == "Projects":
-    st.markdown("<h3 style='color: #0a1828;'><b>Docx Translator:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This feature will assist users in translating content in the docx format from one language to another. It also includes automatic name localization based on the user's selected region.
-                </P""", unsafe_allow_html=True)
-    mention(label="Streamlit App", icon="streamlit",
-            url="https://doctranslator-selvamaniind.streamlit.app/", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DocTranslator", )
-
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Broadband User Churn Prediction:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Churn prediction is a crucial task in customer relationship management as it helps businesses identify customers who are likely to leave or "churn" and take proactive measures to retain them.
+    Projects = option_menu("",
+                       options=['Analysis & Visualization', 'Projects on BI Tools', 'Prediction Projects', 'LLM Based Projects'],
+                       default_index=0,
+                       orientation='horizontal')
+    if Projects == "LLM Based Projects":
+        st.markdown("<h3 style='color: #0a1828;'><b>Docx Translator:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This feature will assist users in translating content in the docx format from one language to another. It also includes automatic name localization based on the user's selected region.
                     </P""", unsafe_allow_html=True)
-    mention(label="Streamlit App", icon="streamlit", url="https://churnprediction-broadband.streamlit.app/", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Churn_Prediction")
+        mention(label="Streamlit App", icon="streamlit",
+                url="https://doctranslator-selvamaniind.streamlit.app/", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DocTranslator", )
 
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Diabetes Prediction:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- By utilizing this advanced machine learning model, we will be equipped with the capability to accurately forecast the probability of diabetes occurrence among expectant mothers.
+    elif Projects == "Prediction Projects":
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Broadband User Churn Prediction:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Churn prediction is a crucial task in customer relationship management as it helps businesses identify customers who are likely to leave or "churn" and take proactive measures to retain them.
                         </P""", unsafe_allow_html=True)
-    mention(label="Streamlit App", icon="streamlit", url="https://diabetesprediction-selvamaniind.streamlit.app", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DiabetesPrediction")
+        mention(label="Streamlit App", icon="streamlit", url="https://churnprediction-broadband.streamlit.app/", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Churn_Prediction")
 
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Loan Approval Prediction:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- With the assistance of this machine learning model, we can assess an individual's eligibility for obtaining a loan. By analyzing multiple parameters, this model possesses the capability to deliver accurate predictions and promote fair lending practices.
-                </P""", unsafe_allow_html=True)
-    #mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Loan_Approval_Prediction" )
-
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Breast Cancer Prediction:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Developed a model that accurately predicts the likelihood of breast cancer in patients. Through analyzing the available data, performing data preprocessing, and utilizing advanced machine learning algorithms.
-                    </P""", unsafe_allow_html=True)
-    # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Breast_Cancer_Prediction")
-
-    st.markdown("<h3 style='color: #0a1828;'><b><br>ISS Live Location Tracking:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Extract the live location information of the International Space Station and display it on a geoMap.
-                        </P""", unsafe_allow_html=True)
-    # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Iss_Live_Location")
-
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Data Analysis on Delivery Charges:</b></h3>", unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Analysis of the charges levied by their Delivery partners to X company per Order are correct or not and action plans to fix the difference.
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Diabetes Prediction:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- By utilizing this advanced machine learning model, we will be equipped with the capability to accurately forecast the probability of diabetes occurrence among expectant mothers.
                             </P""", unsafe_allow_html=True)
-    # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DA_Analysis_on_charges")
+        mention(label="Streamlit App", icon="streamlit", url="https://diabetesprediction-selvamaniind.streamlit.app", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DiabetesPrediction")
 
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Youtube Data Harvesting and Warehousing:</b></h3>",
-                unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The process involves scraping comprehensive channel information from YouTube using the Google API. This data is then stored in MongoDB and later migrated to SQL for further analysis and management. Finally, the data is projected for FAQ purposes, allowing for easy access and utilization.
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Loan Approval Prediction:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- With the assistance of this machine learning model, we can assess an individual's eligibility for obtaining a loan. By analyzing multiple parameters, this model possesses the capability to deliver accurate predictions and promote fair lending practices.
+                    </P""", unsafe_allow_html=True)
+        #mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Loan_Approval_Prediction" )
+
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Breast Cancer Prediction:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Developed a model that accurately predicts the likelihood of breast cancer in patients. Through analyzing the available data, performing data preprocessing, and utilizing advanced machine learning algorithms.
+                        </P""", unsafe_allow_html=True)
+        # mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Breast_Cancer_Prediction")
+
+
+    elif Projects == "Analysis & Visualization":
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Data Analysis on Delivery Charges:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Analysis of the charges levied by their Delivery partners to X company per Order are correct or not and action plans to fix the difference.
                                 </P""", unsafe_allow_html=True)
-    # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/YoutubeDataHarvesting.py")
+        # mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/DA_Analysis_on_charges")
 
-    st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
-                unsafe_allow_html=True)
-    st.markdown("""<p style='color: #0a1828;'>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Performing ETL and EDA on Phonepe data can provide valuable insights into the recent trends of online transactions. By analyzing various scenarios and visualizing the data through different plotting techniques, we can gain a deeper understanding of the patterns and dynamics at play.
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Youtube Data Harvesting and Warehousing:</b></h3>",
+                    unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The process involves scraping comprehensive channel information from YouTube using the Google API. This data is then stored in MongoDB and later migrated to SQL for further analysis and management. Finally, the data is projected for FAQ purposes, allowing for easy access and utilization.
                                     </P""", unsafe_allow_html=True)
-    # mention(label="Streamlit App", icon="streamlit", url="", )
-    mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/PhonepePulse")
+        # mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/YoutubeDataHarvesting.py")
+
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Phonepe Pulse Visualization:</b></h3>",
+                    unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Performing ETL and EDA on Phonepe data can provide valuable insights into the recent trends of online transactions. By analyzing various scenarios and visualizing the data through different plotting techniques, we can gain a deeper understanding of the patterns and dynamics at play.
+                                        </P""", unsafe_allow_html=True)
+        # mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/PhonepePulse")
+
+        st.markdown("<h3 style='color: #0a1828;'><b><br>ISS Live Location Tracking:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Extract the live location information of the International Space Station and display it on a geoMap.
+                            </P""", unsafe_allow_html=True)
+        # mention(label="Streamlit App", icon="streamlit", url="", )
+        mention(label="Github Repo", icon="github", url="https://github.com/selvamani1992/Iss_Live_Location")
+
+    elif Projects == "Projects on BI Tools":
+
+        st.markdown("<h3 style='color: #0a1828;'><b><br>Sales Data Analysis:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This project is to analyze sales data to identify trends, top-selling products, and revenue metrics for informed business decision-making.
+                                            </P""", unsafe_allow_html=True)
+        hr_att_analysis = """<iframe title="Sales Data" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTUwNjUzYjItN2FiNC00ODIzLWJiYzktZGJlNGEwZWFjZTU1IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>"""
+        st.components.v1.html(hr_att_analysis, height=400)
+
+        st.markdown("<h3 style='color: #0a1828;'><b><br>HR Attrition Analysis:</b></h3>", unsafe_allow_html=True)
+        st.markdown("""<p style='color: #0a1828;'>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- A dashboard give 360° view of attrition/retention chances based on Demography, Job Nature and Wellness.
+                                            </P""", unsafe_allow_html=True)
+        hr_att_analysis = """<iframe title="HR Attrition Analytics" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzFmYzFjOGQtOTRmYS00NzFiLWE0ZWYtY2EyNzAwZDFhNTE2IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe>"""
+        st.components.v1.html(hr_att_analysis, height=400)
+
 
 elif page == 'Contact':
     st.markdown(
